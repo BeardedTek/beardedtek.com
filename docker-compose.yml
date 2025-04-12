@@ -1,0 +1,13 @@
+services:
+  hugo-beardedtek-com:
+    build:
+    image: beardedtek/hugo-beardedtek-com:dc-build
+    container_name: "hugo-beardedtek-com"
+    restart: unless-stopped
+    ports:
+      - 8888:80
+    environment:
+      # Note: those envs are customizable but also optional
+      - SERVER_ROOT=/public
+      - SERVER_LOG_LEVEL=info
+      - SERVER_HEALTH=true
