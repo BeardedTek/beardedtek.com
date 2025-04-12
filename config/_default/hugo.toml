@@ -1,4 +1,4 @@
-baseURL = "https://beardedtek.com/"
+baseURL = "https://hugo.beardedtek.com/"
 languageCode = "en-us"
 title = "The Bearded Tek | Your IT Handyman"
 theme = "timer-hugo"
