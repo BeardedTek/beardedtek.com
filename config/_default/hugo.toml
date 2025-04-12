@@ -1,0 +1,7 @@
+baseURL = "https://beardedtek.com/"
+languageCode = "en-us"
+title = "The Bearded Tek | Your IT Handyman"
+theme = "timer-hugo"
+# post pagination
+pagination.pagerSize = "2" # see https://gohugo.io/extras/pagination/
+contactFormAction = "https://formspree.io/f/meoanzpy"

@@ -1,0 +1,26 @@
+
+# Navbar Menus
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[main]]
+name = "Service"
+url = "service/"
+weight = 3
+
+[[main]]
+name = "Blog"
+url = "blog/"
+weight = 5
+
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 6

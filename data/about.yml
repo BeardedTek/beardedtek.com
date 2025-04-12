@@ -1,0 +1,25 @@
+enable  : true
+title   : What Can We Do For You?
+description: >
+  - Troubleshoot Computer & Mac Issues<br>
+  - Troubleshoot Printer Problems<br>
+  - Find Network Slowdowns
+  - Install Network Hardware<br>
+  - Install New Printers<br>
+  - Install Security Cameras<br>
+  - Install Self-Monitored Security Systems<br>
+  - Teach you how to use or manage your setup
+
+image   : images/about-computer-repair.jpg
+aboutItem:
+  - title : Veteran Owned
+    description: > 
+      William Kenny, A United States Coast Guard Veteran, founded The Bearded Tek with the goal of providing affordable on-site service to families and small businesses in the Wasilla and Palmer areas.
+
+  - title : Affordable Service
+    description: > 
+      We keep costs low by not having a brick and mortar presence.  Since we have less bills to pay, we can afford to pass on the savings to you!  Experience the savings for yourself!
+
+  - title : Great Service.  Guaranteed.
+    description: > 
+      We know how stressful it is when tech doesn't work right.  We will make sure you are satisfied with our work before leaving.  If your issue persists because we failed to fix the issue, we will come back and fix it!

@@ -1,0 +1,73 @@
+
+# Site Params
+[params]
+home = "Home"
+logo = "images/logo.png"
+dateFormat = "6 January 2006"
+# Meta data
+description = "The Bearded Tek Your IT Handyman"
+author = "William Kenny"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+# contact form action
+contactFormAction = "https://formspree.io/f/meoanzpy" # contact form works with https://formspree.io
+
+# Banner Section
+[params.banner]
+enable = true
+bgImage = "images/slider.webp"
+heading = "The Bearded Tek"
+description = "Your IT Handyman Serving the Wasilla and Palmer Areas."
+# button
+btn = true
+btnText = "Our Services"
+btnURL = "service/"
+
+# flip text
+[[params.banner.flipText]]
+title = "ON-SITE SUPPORT"
+[[params.banner.flipText]]
+title = "REMOTE SUPPORT"
+[[params.banner.flipText]]
+title = "COMPUTERS"
+[[params.banner.flipText]]
+title = "PRINTERS"
+[[params.banner.flipText]]
+title = "NETWORKING"
+[[params.banner.flipText]]
+title = "SMART PHONES"
+[[params.banner.flipText]]
+title = "CAMERAS"
+[[params.banner.flipText]]
+title = "WEB DESIGN"
+[[params.banner.flipText]]
+title = "WEB HOSTING"
+
+# Homepage About Section
+[params.about]
+enable = true
+title = "Let Us Be Your IT Guy!"
+content = "The Bearded Tek is your local IT Handyman, offering reliable tech support for homes and small businesses. From Wi-Fi fixes to device setup, we simplify technology with honest service and real solutions—no jargon, just help when you need it."
+image = "images/help-button.png"
+
+# Call to Action
+[params.cta]
+enable = true
+title = "Contact Us Today!"
+content = "Appointmens are generally available Mon - Fri 10:00 AM - 3:00 PM"
+btnText = "Get Your Appointment Today"
+btnURL = "/contact"
+
+
+# social icon
+[[params.socialIcon]]
+icon = "ion-social-facebook"
+url = "#"
+
+[[params.socialIcon]]
+icon = "ion-social-instagram"
+url = "#"
+
+[[params.socialIcon]]
+icon = "ion-social-linkedin"
+url = "#"
