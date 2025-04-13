@@ -6,7 +6,8 @@ COPY . .
 
 # Build the site
 ARG HUGO_BASEURL
-RUN hugo --minify -b ${HUGO_BASEURL}
+ARG HUGO_OPTS=""
+RUN hugo ${HUGO_OPTS} -b ${HUGO_BASEURL}
 
 # Stage 2: Serve with static-web-server
 FROM joseluisq/static-web-server:2-debian
