@@ -11,7 +11,7 @@ services:
         HUGO_BASEURL: $HUGO_BASEURL
         HUGO_OUTPUT: ${HUGO_OUTPUT}
     image: beardetek/${SITE_LABEL:-hugo_site}
-    cotainer_name: ${SITE_LABEL:-hugo_site}
+    container_name: ${SITE_LABEL:-hugo_site}
     restart: unless-stopped
     networks:
       traefik:
