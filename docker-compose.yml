@@ -20,7 +20,7 @@ services:
       - SERVER_HEALTH=true
       - SERVER_CORS_ALLOW_ORIGINS=${HUGO_BASEURL:-http://localhost:8888}
       - SERVER_CORS_ALLOW_HEADERS="origin, content-type, x-requested-with"
-      - NGINX_DOMAIN="${SITE_DOMAIN:-localhost}"
+      - NGINX_HOST="${SITE_DOMAIN:-localhost}"
       - NGINX_PORT=${NGINX_PORT:-80}
     volumes:
       - ./nginx/templates:/etc/nginx/templates
