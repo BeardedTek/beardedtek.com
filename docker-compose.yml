@@ -32,7 +32,7 @@ services:
 
       - "traefik.http.middlewares.cors-header.headers.accesscontrolallowmethods=GET,OPTIONS,PUT"
       - "traefik.http.middlewares.cors-header.headers.accesscontrolallowheaders=*"
-      - "traefik.http.middlewares.cors-header.headers.accesscontrolalloworiginlist=*"
+      - "traefik.http.middlewares.cors-header.headers.accesscontrolalloworiginlist=https://hugo.beardedtek.com"
       - "traefik.http.middlewares.cors-header.headers.accesscontrolmaxage=100"
       - "traefik.http.middlewares.cors-header.headers.addvaryheader=true"
       - "traefik.http.routers.your-service-name.middlewares=cors-header"
