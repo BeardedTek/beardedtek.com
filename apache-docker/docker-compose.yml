@@ -17,8 +17,6 @@ services:
       traefik:
     ports:
       - 8888:80
-    volumes:
-      - ${HUGO_OUTPUT:-/output}:/usr/local/apache2/htdocs
     labels:
       - "traefik.enable=${TRAEFIK_ENABLE:-true}"
       - "traefik.docker.network=traefik}"
