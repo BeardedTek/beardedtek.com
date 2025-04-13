@@ -1,13 +1,25 @@
 services:
-  hugo-beardedtek-com:
+  hugo_site:
     build:
-    image: beardedtek/hugo-beardedtek-com:dc-build
-    container_name: "hugo-beardedtek-com"
+      context: .
+      args:
+        HUGO_BASEURL: ${HUGO_BASEURL:-http://localhost:8888}
+    image: beardedtek/${SITE_LABEL:-hugo_site}:dc-build
+    container_name: "${SITE_LABEL:-hugo_site}"
     restart: unless-stopped
     ports:
       - 8888:80
     environment:
       # Note: those envs are customizable but also optional
       - SERVER_ROOT=/public
-      - SERVER_LOG_LEVEL=info
+      - SERVER_LOG_LEVEL=${SERVER_LOG_LEVEL:-info}
       - SERVER_HEALTH=true
+    labels:
+      - "traefik.enable=${TRAEFIK_ENABLE:-true}"
+      - "traefik.docker.network=${TRAEFIK_NETWORK:-traefik}"
+      - "traefik.http.routers.${SITE_LABEL:-hugo_site}.rule=Host(`${SITE_DOMAIN:-localhost}`)"
+      - "traefik.http.routers.${SITE_LABEL:-hugo_site}.entryPoints=https"
+      - "traefik.http.routers.${SITE_LABEL:-hugo_site}.tls=true"
+      - "traefik.http.routers.${SITE_LABEL:-hugo_site}.tls.certresolver=le"
+      - "traefik.http.routers.${SITE_LABEL:-hugo_site}.service=${SITE_LABEL:-hugo_site}-entrypoint"
+      - "traefik.http.services.${SITE_LABEL:-hugo_site}-entrypoint.loadbalancer.server.port=3000"
