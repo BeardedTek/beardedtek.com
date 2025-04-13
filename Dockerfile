@@ -16,8 +16,6 @@ WORKDIR /usr/share/nginx/html
 
 # Copy the generated site from the builder stage
 COPY --chown=nginx:nginx --from=builder /src/public .
-# Copy CORS configuration
-COPY nginx/default.conf /etc/nginx/conf.d/
 
 # Expose the default port
 EXPOSE 80/tcp
