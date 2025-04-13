@@ -18,7 +18,8 @@ services:
       - SERVER_ROOT=/public
       - SERVER_LOG_LEVEL=${SERVER_LOG_LEVEL:-info}
       - SERVER_HEALTH=true
-      - SERVER_CORS_ALLOW_ORIGINS=*
+      - SERVER_CORS_ALLOW_ORIGINS=${HUGO_BASEURL:-http://localhost:8888}
+      - SERVER_CORS_ALLOW_HEADERS="origin, content-type, x-requested-with"
     labels:
       - "traefik.enable=${TRAEFIK_ENABLE:-true}"
       - "traefik.docker.network=traefik}"
