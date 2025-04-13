@@ -9,12 +9,13 @@ ARG HUGO_BASEURL
 ARG HUGO_OPTS=""
 RUN hugo ${HUGO_OPTS} -b ${HUGO_BASEURL}
 
-# Stage 2: Serve with static-web-server
-FROM joseluisq/static-web-server:2-debian
+# Stage 2: Serve with nginx
+FROM nginx:stable-alpine
+WORKDIR /usr/share/nginx/html
 
 
 # Copy the generated site from the builder stage
-COPY --from=builder /src/public /public
+COPY --from=builder /src/public .
 
 # Expose the default port
 EXPOSE 80/tcp
