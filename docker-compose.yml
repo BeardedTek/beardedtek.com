@@ -9,11 +9,6 @@ services:
     restart: unless-stopped
     ports:
       - 8888:80
-    environment:
-      # Note: those envs are customizable but also optional
-      - SERVER_ROOT=/public
-      - SERVER_LOG_LEVEL=${SERVER_LOG_LEVEL:-info}
-      - SERVER_HEALTH=true
     labels:
       - "traefik.enable=${TRAEFIK_ENABLE:-true}"
       - "traefik.docker.network=${TRAEFIK_NETWORK:-traefik}"

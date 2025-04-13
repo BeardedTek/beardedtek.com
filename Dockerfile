@@ -9,12 +9,12 @@ ARG HUGO_BASEURL
 RUN hugo --minify -b ${HUGO_BASEURL}
 
 # Stage 2: Serve with static-web-server
-FROM joseluisq/static-web-server:2-debian
+FROM nginx:stable-alpine
+WORKDIR /usr/share/nginx/html
+
 
 # Copy the generated site from the builder stage
-COPY --from=builder /src/public /public
+COPY --from=builder /src/public .
 
 # Expose the default port
-EXPOSE 80
-
-# Use the default CMD from joseluisq/static-web-server
+EXPOSE 80/tcp
