@@ -1,0 +1,30 @@
+networks:
+  traefik:
+    external: true
+
+services:
+  hugo_site:
+    build:
+      context: .
+      args:
+        GIT_REPO: ${GIT_REPO}
+        HUGO_BASEURL: $HUGO_BASEURL
+        HUGO_OUTPUT: ${HUGO_OUTPUT}
+    image: beardetek/${SITE_LABEL:-hugo_site}
+    cotainer_name: ${SITE_LABEL:-hugo_site}
+    restart: unless-stopped
+    networks:
+      traefik:
+    ports:
+      - 8888:80
+    volumes:
+      - ${HUGO_OUTPUT:-/output}:/usr/local/apache2/htdocs
+    labels:
+      - "traefik.enable=${TRAEFIK_ENABLE:-true}"
+      - "traefik.docker.network=traefik}"
+      - "traefik.http.routers.${SITE_LABEL:-hugo_site}.rule=Host(`${SITE_DOMAIN:-localhost}`)"
+      - "traefik.http.routers.${SITE_LABEL:-hugo_site}.entryPoints=https"
+      - "traefik.http.routers.${SITE_LABEL:-hugo_site}.tls=true"
+      - "traefik.http.routers.${SITE_LABEL:-hugo_site}.tls.certresolver=le"
+      - "traefik.http.routers.${SITE_LABEL:-hugo_site}.service=${SITE_LABEL:-hugo_site}-entrypoint"
+      - "traefik.http.services.${SITE_LABEL:-hugo_site}-entrypoint.loadbalancer.server.port=80"
