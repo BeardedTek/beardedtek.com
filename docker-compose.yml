@@ -14,11 +14,11 @@ services:
       traefik:
     ports:
       - 8888:80
-     environment:
-       # Note: those envs are customizable but also optional
-       - SERVER_ROOT=/public
-       - SERVER_LOG_LEVEL=${SERVER_LOG_LEVEL:-info}
-       - SERVER_HEALTH=true
+    environment:
+      - SERVER_ROOT=/public
+      - SERVER_LOG_LEVEL=${SERVER_LOG_LEVEL:-info}
+      - SERVER_HEALTH=true
+      - SERVER_CORS_ALLOW_ORIGINS=*
     labels:
       - "traefik.enable=${TRAEFIK_ENABLE:-true}"
       - "traefik.docker.network=traefik}"
