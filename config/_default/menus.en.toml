@@ -1,10 +1,6 @@
 
 # Navbar Menus
 [[main]]
-name = "(907) 519-8577"
-url = "tel:+19075198577"
-weight = 1
-[[main]]
 name = "Home"
 url = "/"
 weight = 2
