@@ -188,20 +188,6 @@ a:hover {
 }
 
 /*=== MEDIA QUERY ===*/
-@media  screen and (max-width: 450) {
-  .logo-img{
-    height: auto;
-    width: auto;
-    max-width: 350px;
-  }
-}
-@media screen and (max-width: 400) {
-  .logo-img{
-    height: auto;
-    width: auto;
-    max-width: 300px;
-  }
-}
 
 .top-bar {
   position: fixed;
