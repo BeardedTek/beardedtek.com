@@ -188,6 +188,14 @@ a:hover {
 }
 
 /*=== MEDIA QUERY ===*/
+@media (max-width: 450) {
+  .navbar-brand{
+    height: auto;
+    width: auto;
+    max-width: 300px;
+  }
+}
+
 .top-bar {
   position: fixed;
   top: 0;
