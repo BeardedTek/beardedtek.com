@@ -3,22 +3,22 @@ title   : WHAT WE LOVE TO DO
 subtitle: At The Bearded Tek, we simplify technology with on-site and remote support, web design, and hardware installation. From fixing devices to building websites, we deliver reliable, friendly service tailored to your needs. Let us handle the tech, so you can focus on what you do best.
 image   : images/team.jpg
 serviceItem :
-  - icon  : ion-ios-paper-outline
+  - icon  : ion-briefcase
     title : ON-SITE SUPPORT
     description: >
       We come to you for hands-on tech help—troubleshooting, installations, and setup—right at your home or business, with fast, friendly, and reliable service.
 
-  - icon  : ion-ios-pint-outline
+  - icon  : ion-wifi
     title : REMOTE SUPPORT
     description: >
       Quick, secure remote support for troubleshooting, updates, and tech issues—no waiting, no hassle. We fix problems fast, right from wherever you are.
 
-  - icon  : ion-ios-paper-outline
+  - icon  : ion-code-working
     title : WEB DESIGN
     description: >
       We design and host clean, professional websites that reflect your brand—mobile-friendly, fast, and secure, with everything you need to stand out online.
 
-  - icon  : ion-ios-paper-outline
+  - icon  : ion-hammer
     title : HARDWARE INSTALLATION
     description: >
       We install and set up computers, printers, networks, and more—ensuring everything works smoothly, efficiently, and exactly how you need it, right from the start.
