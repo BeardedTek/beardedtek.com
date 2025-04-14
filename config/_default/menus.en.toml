@@ -1,8 +1,13 @@
 
 # Navbar Menus
 [[main]]
-name = "Home"
-url = "/"
+name = "Service"
+url = "service/"
+weight = 1
+
+[[main]]
+name = "Blog"
+url = "blog/"
 weight = 2
 
 [[main]]
@@ -11,16 +16,6 @@ url = "about/"
 weight = 3
 
 [[main]]
-name = "Service"
-url = "service/"
-weight = 4
-
-[[main]]
-name = "Blog"
-url = "blog/"
-weight = 5
-
-[[main]]
 name = "Contact"
 url = "contact/"
-weight = 6
+weight = 4
