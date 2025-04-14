@@ -11,7 +11,7 @@ author = "William Kenny"
 googleAnalitycsID = "Your ID"
 # contact form action
 contactFormAction = "https://formspree.io/f/meoanzpy" # contact form works with https://formspree.io
-
+copyright = "The Bearded Tek"
 # Banner Section
 [params.banner]
 enable = true
