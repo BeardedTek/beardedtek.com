@@ -12,7 +12,11 @@
 					</button>
 
 					<div class="collapse navbar-collapse" id="navigation">
-						<ul class="navbar-nav ml-auto">{{ range site.Menus.main }}
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="tel:+19075198577">(907) 519-8577</a>
+							</li>
+							{{ range site.Menus.main }}
 							
 							{{ if .HasChildren }}
 							<li class="nav-item dropdown">
@@ -29,9 +33,7 @@
 								</div>
 							</li>
 							{{ else }}
-							<li class="nav-item">
-								<a class="nav-link" href="tel:+19075198577">(907) 519-8577</a>
-							</li>
+							
 							<li class="nav-item">
 								<a class="nav-link"
 									href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
