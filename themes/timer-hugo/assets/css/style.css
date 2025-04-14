@@ -189,14 +189,14 @@ a:hover {
 
 /*=== MEDIA QUERY ===*/
 @media (max-width: 450) {
-  .navbar-brand{
+  .logo-img{
     height: auto;
     width: auto;
     max-width: 350px;
   }
 }
 @media (max-width: 400) {
-  .navbar-brand{
+  .logo-img{
     height: auto;
     width: auto;
     max-width: 300px;
