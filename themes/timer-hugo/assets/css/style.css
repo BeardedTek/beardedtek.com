@@ -188,14 +188,14 @@ a:hover {
 }
 
 /*=== MEDIA QUERY ===*/
-@media (max-width: 450) {
+@media  screen and (max-width: 450) {
   .logo-img{
     height: auto;
     width: auto;
     max-width: 350px;
   }
 }
-@media (max-width: 400) {
+@media screen and (max-width: 400) {
   .logo-img{
     height: auto;
     width: auto;
