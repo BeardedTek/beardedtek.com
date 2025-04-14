@@ -62,12 +62,8 @@ btnURL = "/contact"
 # social icon
 [[params.socialIcon]]
 icon = "ion-social-facebook"
-url = "#"
+url = "https://www.facebook.com/BeardedTek/"
 
 [[params.socialIcon]]
-icon = "ion-social-instagram"
-url = "#"
-
-[[params.socialIcon]]
-icon = "ion-social-linkedin"
-url = "#"
+icon = "ion-social-youtube"
+url = "https://www.youtube.com/@BeardedTek"
