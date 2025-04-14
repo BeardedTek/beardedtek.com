@@ -35,5 +35,6 @@
 	{{"<!-- Custom stylesheet - for your changes -->" |safeHTML}}
 	{{ $custom := resources.Get "css/custom.css" | minify }}
   <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
-  
+  {{"<!-- Plausible -->" |safeHTML}}
+  <script defer data-domain="beardedtek.com" src="https://plausible.beardedtek.org/js/script.js"></script>
 </head>
