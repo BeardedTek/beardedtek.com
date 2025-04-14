@@ -13,9 +13,7 @@
 
 					<div class="collapse navbar-collapse" id="navigation">
 						<ul class="navbar-nav ml-auto">{{ range site.Menus.main }}
-							<li class="nav-item">
-								<a class="dropdown-item" href="tel:+19075198577">(907) 519-8577</a>
-							</li>
+							
 							{{ if .HasChildren }}
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -23,6 +21,9 @@
 									{{ .Name }}
 								</a>
 								<div class="dropdown-menu">
+									<li class="nav-item">
+										<a class="nav-link" href="tel:+19075198577">(907) 519-8577</a>
+									</li>
 									{{ range .Children }}
 									<a class="dropdown-item"
 										href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
