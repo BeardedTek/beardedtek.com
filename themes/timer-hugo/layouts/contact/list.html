@@ -54,28 +54,24 @@
       <div class="col-lg-3 col-sm-6">
         <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
           <i class="ion-ios-location-outline"></i>
-          {{ with .Site.Data.contact.officeAddress1 }}<h5>{{ . }}</h5>{{ end }}
+          {{ with .Site.Data.contact.officeAddress }}<h5>{{ . }}</h5>{{ end }}
         </div>
       </div>
       <div class="col-lg-3 col-sm-6">
-        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
-          <i class="ion-ios-location-outline"></i>
-          {{ with .Site.Data.contact.officeAddress2 }}<h5>{{ . }}</h5>{{ end }}
-        </div>
+        <a href="mailto:{{ with .Site.Data.contact.mail1 }}{{ . }}{{ end }}">
+          <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
+            <i class="ion-ios-email-outline"></i>
+            <p>{{ with .Site.Data.contact.email }}{{ . }}{{ end }}</p>
+          </div>
+        </a>
       </div>
       <div class="col-lg-3 col-sm-6">
-        <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
-          <i class="ion-ios-email-outline"></i>
-          <p>{{ with .Site.Data.contact.mail1 }}{{ . }}{{ end }}
-            <br>{{ with .Site.Data.contact.mail2 }}{{ . }}{{ end }}</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
-          <i class="ion-ios-telephone-outline"></i>
-          <p>{{ with .Site.Data.contact.phone1 }}{{ . }}{{ end }}
-            <br>{{ with .Site.Data.contact.phone2 }}{{ . }}{{ end }}</p>
-        </div>
+        <a href="tel:{{ with .Site.Data.contact.phone1 }}{{ . }}{{ end }}"></a>
+          <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+            <i class="ion-ios-telephone-outline"></i>
+            <p>{{ with .Site.Data.contact.phone }}{{ . }}{{ end }}</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
