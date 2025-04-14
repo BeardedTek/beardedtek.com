@@ -1,19 +1,23 @@
 
 # Navbar Menus
 [[main]]
+name = "(907) 519-8577"
+url = "tel:+19075198577"
+weight = 1
+[[main]]
 name = "Home"
 url = "/"
-weight = 1
+weight = 2
 
 [[main]]
 name = "About"
 url = "about/"
-weight = 2
+weight = 3
 
 [[main]]
 name = "Service"
 url = "service/"
-weight = 3
+weight = 4
 
 [[main]]
 name = "Blog"
