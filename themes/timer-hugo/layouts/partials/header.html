@@ -21,9 +21,7 @@
 									{{ .Name }}
 								</a>
 								<div class="dropdown-menu">
-									<li class="nav-item">
-										<a class="nav-link" href="tel:+19075198577">(907) 519-8577</a>
-									</li>
+									
 									{{ range .Children }}
 									<a class="dropdown-item"
 										href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
@@ -31,6 +29,9 @@
 								</div>
 							</li>
 							{{ else }}
+							<li class="nav-item">
+								<a class="nav-link" href="tel:+19075198577">(907) 519-8577</a>
+							</li>
 							<li class="nav-item">
 								<a class="nav-link"
 									href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
