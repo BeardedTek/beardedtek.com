@@ -1,6 +1,6 @@
 enable  : true
 title   : SIMPLE AND AFFORDABLE
-subtitle: We offer affordable tech solutions: On-Site Service from $50, Remote Support from $40, Web Design starting at $50, and Hosting from just $5/month. Quality service, clear pricing, and no hidden fees—whether you need quick fixes, custom websites, or reliable hosting, we’ve got you covered.
+subtitle: We offer affordable tech solutions -- On-Site Service from $50, Remote Support from $40, Web Design starting at $50, and Hosting from just $5/month. Quality service, clear pricing, and no hidden fees—whether you need quick fixes, custom websites, or reliable hosting, we’ve got you covered.
 ratesItem :
   - icon  : ion-briefcase
     title : ON-SITE SUPPORT
