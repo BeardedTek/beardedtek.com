@@ -1,0 +1,40 @@
+enable  : true
+title   : SIMPLE AND AFFORDABLE
+subtitle: We offer affordable tech solutions: On-Site Service from $50, Remote Support from $40, Web Design starting at $50, and Hosting from just $5/month. Quality service, clear pricing, and no hidden fees—whether you need quick fixes, custom websites, or reliable hosting, we’ve got you covered.
+ratesItem :
+  - icon  : ion-briefcase
+    title : ON-SITE SUPPORT
+    1stRate: $50/hr
+    1stDescription: First Hour
+    2ndRate: $100/hr
+    2ndDescription: Additional Hours billed in 15 min increments
+    3rdRate:
+    3rdDescription:
+
+  - icon  : ion-wifi
+    title : REMOTE SUPPORT
+    1stRate: $40/hr
+    1stDescription: First Hour
+    2ndRate: $80/hr
+    2ndDescription: Additional Hours billed in 15 min increments
+    3rdRate:
+    3rdDescription:
+
+  - icon  : ion-code-working
+    title : WEB DESIGN
+    1stRate: $50
+    1stDescription: Simple Static Site
+    2ndRate: $100
+    2ndDescription: Custom Static Site
+    3rdRate: $150+
+    3rdDescription: Custom Database Backend Site
+    
+  - icon  : ion-hammer
+    title : HARDWARE INSTALLATION
+    1stRate: Starting at $5/mo
+    1stDescription: Shared VPS Server
+    2ndRate: Starting at $10/mo
+    2ndDescription: Dedicated VPS Server
+    3rdRate:
+    3rdDescription:
+    

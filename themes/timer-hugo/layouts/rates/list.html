@@ -1,0 +1,50 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ if .Site.Data.rates.enable }}
+{{ "<!-- Rates Section Start -->" | safeHTML }}
+<section id="rates-page" class="pages rates-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				{{ with .Site.Data.rates.title }}<h2 class="subtitle wow fadeInUp animated" data-wow-delay=".3s"
+					data-wow-duration="500ms">{{ . }}</h2>{{ end }}
+				{{ with .Site.Data.rates.subtitle }}<p class="subtitle-des wow fadeInUp animated" data-wow-delay=".5s"
+					data-wow-duration="500ms">{{ . }}</p>{{ end }}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 order-2 order-lg-1">
+				<div class="block">
+					<div class="row rates-parts">
+						{{ range .Site.Data.rates.rateItem }}
+						<div class="col-md-6">
+							<div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="600ms">
+								<div class="row">
+									{{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+									{{ with .title }}<h4>{{ . }}</h4>{{ end }}
+								</div>
+								<div class="row">
+									{{ with .1stHrRate }}<div class="col-md-6">{{ . }}</div>{{ end }}
+									{{ with .1stHrDescription }}<div class="col-md-6">{{ . }}</div>{{ end }}
+								</div>
+								<div class="row">
+									{{ with .2ndHrRate }}<div class="col-md-6">{{ . }}</div>{{ end }}
+									{{ with .2ndHrDescription }}<div class="col-md-6">{{ . }}</div>{{ end }}
+								</div>
+							</div>
+						</div>
+						{{ end }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ "<!-- rates Section End -->" | safeHTML }}
+{{ end }}
+
+{{ partial "cta.html" . }}
+
+{{ end }}
